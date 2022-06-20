@@ -10,6 +10,10 @@ A repository to test and experiment kafka on the go
 producer_script run: `python kafka-producer.py`\
 consumer_script run: `python kafka-consumer.py <topic name> <consumer group id>`
 
+**Kafka Initialization Docker**\
+`make kafka`\
+`make clean`
+
 **Kafka Configure Commands**\
 topic_list: `kafka-topics.sh --list --zookeeper zookeeper:2181`\
 topic_create: `kafka-topics.sh --create --zookeeper zookeeper:2181 --replication-factor 1 --partitions 2 --topic <topic name>`\
