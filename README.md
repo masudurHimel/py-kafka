@@ -1,4 +1,4 @@
-# kafka-on-the-go
+# Py-Kafka
 A repository to test and experiment kafka on the go
 
 ## python dependency
