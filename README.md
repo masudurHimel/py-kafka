@@ -10,7 +10,8 @@ install dependencies: pip install -r requirements.txt
 
 ## producer_script run
 ```bash
-python kafka-producer.py
+python kafka-producer.py topic1 topic2
+python kafka-producer.py <topic name> <topic name> <topic name>...
 ```
 
 ## consumer_script run

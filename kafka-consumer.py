@@ -4,7 +4,7 @@ from kafka import KafkaConsumer
 import sys
 
 
-def consumeData(topic='testTopic', group_id='test_group', connection_timeout_ms=-1):
+def consumeData(topic='defaultTopic', group_id='defaultGroup', connection_timeout_ms=-1):
     consumer = KafkaConsumer(
         topic, group_id=group_id,
         bootstrap_servers=['localhost:9092'],
