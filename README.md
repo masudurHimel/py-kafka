@@ -31,7 +31,12 @@ make clean
 docker exec -it kafka /bin/sh
 ```
 
-**To Add/Alter Topic/Partition:**
+**To Add Topic:**
+```bash
+kafka-topics.sh --create --zookeeper zookeeper:2181 --replication-factor 1 --partitions 1 --topic <topic name>
+```
+
+**To Alter Topic Partition:**
 ```bash
 kafka-topics.sh --alter --zookeeper zookeeper:2181 --partitions 2 --topic <topic name>
 ```
